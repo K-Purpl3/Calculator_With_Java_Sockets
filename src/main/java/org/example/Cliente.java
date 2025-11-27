@@ -18,7 +18,7 @@ public class Cliente {
 
             while (continuar != 0) {
 
-                System.out.print("Introduce tipo de operación: 1-Suma, 2-Resta, 3-Multiplicación, 4-División: ");
+                System.out.print("Introduce tipo de operacion: 1-Suma, 2-Resta, 3-Multiplicacion, 4-Division: ");
                 int op = sc.nextInt();
 
                 System.out.print("Introduce primer valor: ");
@@ -27,14 +27,14 @@ public class Cliente {
                 System.out.print("Introduce segundo valor: ");
                 double n2 = sc.nextDouble();
 
-                // enviamos "op#n1#n2"
+                //enviamos op-n1 op-n2"
                 String mensaje = op + "#" + n1 + "#" + n2;
                 salida.println(mensaje);
 
                 String respuesta = entrada.readLine();
                 System.out.println("El resultado es: " + respuesta.replace("RESULTADO:", ""));
 
-                System.out.println("Si quieres hacer otra operación escribe cualquier numero que no sea 0.");
+                System.out.println("Para continuar, introduce un numero que no sea 0.");
                 System.out.println("Para salir, escribe 0.");
                 continuar = sc.nextInt();
 

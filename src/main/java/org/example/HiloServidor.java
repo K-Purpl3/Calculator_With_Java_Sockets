@@ -59,7 +59,7 @@ public class HiloServidor implements Runnable {
                         resultado = n1 / n2;
                         break;
                     default:
-                        salida.println("ERROR: Operación no válida");
+                        salida.println("ERROR: Operación no valida");
                         continue;
                 }
 
